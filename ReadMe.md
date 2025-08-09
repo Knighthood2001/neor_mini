@@ -143,7 +143,7 @@ roslaunch neor_mini display.launch
 ![](pictures/neor_mini_rviz.png)
 
 
-
+带有传感器的
 ```bash
 #show the neor_mini_gazebo_sensors.urdf in Rviz
 cd ~/neor_mini/mini_sim18_ws
@@ -155,7 +155,7 @@ roslaunch neor_mini display_gazebo_sensors.launch
 
 
 
-Step 3: launch steer_mini_gazebo's launch file. visualize the urdf in Gazebo and try to control neor_mini .
+Step 3: 启动 steer_mini_gazebo 包的 launch 文件，在 Gazebo 中可视化 URDF 模型，并尝试控制 neor_mini（机器人）。
 
 ```bash
 #show the neor_mini_gazebo.urdf in Gazebo
