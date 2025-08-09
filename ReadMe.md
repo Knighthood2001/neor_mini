@@ -267,17 +267,14 @@ sudo chmod +x src/neor_mini_linetrack/scripts/line_follower_object.py       # sa
 rosrun neor_mini_linetrack line_follower_object.py
 ```
 
-and you will see four new windows ,it's like this:
+你可以看到：
 
 ![](pictures/line-tracking_start_success.png)
 
-Congratulations!!! you will see the neor_mini urdf model running automatically using the data from the camera. 
+恭喜你! !您将看到使用来自相机的数据自动运行的neor_mini urdf模型。
 
 
-
-Ps. select your own hsv color 
-
-When your running result is different from the above, you can select the hsv color range suitable for you.
+PS：当您的运行结果与上述不同时，请选择您自己的HSV颜色，您可以选择适合您的HSV颜色范围。
 
 
 
