@@ -190,7 +190,8 @@ roslaunch mini_gmapping gmapping_steer_mini_sensors.launch
 
 ![](pictures/gmapping_neor_mini.png)
 
-When you think the construction map is finished, Open a new terminal, you can run the below command to save the map.
+
+当您认为地图已经扫描完成时，打开一个新的终端，您可以运行下面的命令来保存地图。
 
 ```bash
 cd ~/neor_mini/mini_sim18_ws/
@@ -201,7 +202,7 @@ rosrun map_server map_saver -f cooneo_office_map      # You can saved as another
 
 
 
-Step 5 : Using cooneo_office_map to make a navigation demo.
+Step 5 : 使用 cooneo_office_map 地图进行导航
 
 ```bash
 cd ~/neor_mini/mini_sim18_ws/
@@ -211,13 +212,13 @@ roslaunch mini_navigation navigation_steer_mini_sensors.launch                  
 
 ![](pictures/navigation_Demo.png)
 
-When you run up the list launch file, your monitor will show two windows, one is Rviz, another is Gazebo. looking at the rviz window up toolbar, you need to click "2D Nav Goal", and select a navigation goal on the map, soon the neor_mini model car will plan a route, and arrived.
+
+当你运行上述列表中的launch文件后，显示器会显示两个窗口，一个是Rviz，另一个是Gazebo。查看Rviz窗口上方的工具栏，你需要点击“2D Nav Goal”（2D导航目标），然后在地图上选择一个导航目标点，很快neor_mini模型车就会规划出一条路径并抵达该目标点。
 
 
+## Chapter 2: 制作一个室外线路跟踪移动机器人
 
-## Chapter 2: Make a outdoor line-tracking mobile robot
-
-### 	Corresponding WeChat article
+### 	相应的微信文章
 
 ![](pictures/02_title.png)
 

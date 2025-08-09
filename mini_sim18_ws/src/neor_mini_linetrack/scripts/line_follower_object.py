@@ -29,8 +29,10 @@ class LineFollower(object):
         descentre = 50
         rows_to_watch = 100
         #crop_img = cv_image
-        crop_img = cv_image[(height)/4 + descentre:(height)/4 + (descentre+rows_to_watch)][1:width]
+        # crop_img = cv_image[(height)/4 + descentre:(height)/4 + (descentre+rows_to_watch)][1:width]
 
+        # 修改后（正确）
+        crop_img = cv_image[(height//4) + descentre : (height//4) + (descentre + rows_to_watch)][1:width]
         #convert from RGB to HSV
         hsv = cv2.cvtColor(crop_img,cv2.COLOR_BGR2HSV)
         cv2.imshow("HSV",hsv)
