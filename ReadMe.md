@@ -122,11 +122,11 @@ catkin_make                              # if failed,please retry again and agai
 You can see 5 ROS packages in mini_sim18_ws/src folder,lists:
 
 ```bash
-neor_mini                           # Storing the description of neor mini's appearance with urdf file
-steer_drive_ros                # Ackermann kinematics ROS plugins
-steer_mini_gazebo         # Storing the launch files of neor mini model visual in Gazebo
-mini_gmapping                # Storing the launch files and gmapping params files
-mini_navigation               # Storing the launch file and navigation params files
+neor_mini # 使用 URDF 文件存储 neor_mini 的外观描述
+steer_drive_ros # 阿克曼运动学 ROS 插件
+steer_mini_gazebo # 存储在 Gazebo 中显示 neor_mini 模型的 launch 文件
+mini_gmapping # 存储 launch 文件和 gmapping 参数文件
+mini_navigation # 存储 launch 文件和导航参数文件
 ```
 
 
