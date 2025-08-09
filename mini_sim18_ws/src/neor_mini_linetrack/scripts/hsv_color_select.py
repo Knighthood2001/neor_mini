@@ -4,7 +4,11 @@
 import rospy
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge, CvBridgeError
-
+"""
+这是一个ROS 环境下的颜色提取调试工具：通过滑动条调整 HSV 参数，实时查看相机图像中哪些区域会被保留
+（比如想提取红色的线，就调整滑动条让红色区域在hsv_img中显示为白色），最终可以将调试好的 HSV 阈值
+用到其他代码（比如循线小车、颜色识别机器人）中。
+"""
 import cv2
 import numpy as np
 import time
@@ -37,12 +41,12 @@ hsv_low = np.array([0, 0, 0])
 hsv_high = np.array([0, 0, 0])
 
 cv2.namedWindow("HSV_Select_color")
-cv2.createTrackbar("H low",  "image", 0, 255, h_low)  
-cv2.createTrackbar("H high", "image", 0, 255, h_high)
-cv2.createTrackbar("S low",   "image", 0, 255, s_low)
-cv2.createTrackbar("S high",  "image", 0, 255, s_high)
-cv2.createTrackbar("V low",   "image", 0, 255, v_low)
-cv2.createTrackbar("V high", "image", 0, 255, v_high)
+cv2.createTrackbar("H low",  "HSV_Select_color", 0, 255, h_low)  
+cv2.createTrackbar("H high", "HSV_Select_color", 0, 255, h_high)
+cv2.createTrackbar("S low",   "HSV_Select_color", 0, 255, s_low)
+cv2.createTrackbar("S high",  "HSV_Select_color", 0, 255, s_high)
+cv2.createTrackbar("V low",   "HSV_Select_color", 0, 255, v_low)
+cv2.createTrackbar("V high", "HSV_Select_color", 0, 255, v_high)
 
 
 def callback(img):
